@@ -16,6 +16,13 @@ const events = program.map(f => ({
   venue: f.venue
 }))
 
+const currentYear = events[0].start.getFullYear()
+if(localStorage.getItem('year') !== currentYear.toString()) {
+  console.log('clear')
+  localStorage.clear()
+  localStorage.setItem('year', currentYear.toString())
+}
+
 const margin = 5*60000
 const travelTimeVikaVega= 26*60000
 const travelTimeCinVega= 19*60000
@@ -135,7 +142,7 @@ function App() {
             plugins={[timeGridPlugin, interactionPlugin]}
             headerToolbar={null}
             initialView="ffs"
-            initialDate={'2023-11-11'}
+            initialDate={events[0].start}
             slotMinTime={'11:00:00'}
             slotMaxTime={'23:59:59'}
             eventSources={[

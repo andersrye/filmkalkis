@@ -1,1354 +1,1826 @@
 [
   {
-    "date": "2023-11-11",
+    "date": "2024-11-09",
     "venue": "Cinemateket",
     "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Kikis budservice (Norsk tale)",
+    "name": "Kortfilmperler fra Mexico",
     "start": "11:00",
-    "end": "12:43"
+    "end": "11:47"
   },
   {
-    "date": "2023-11-11",
+    "date": "2024-11-09",
     "venue": "Cinemateket",
     "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Kortfilmperler fra Sør-Korea",
+    "name": "Feliciano, Rambo & Ronaldo",
     "start": "13:00",
-    "end": "13:42"
+    "end": "14:23"
   },
   {
-    "date": "2023-11-11",
+    "date": "2024-11-09",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "My Stolen Planet",
+    "start": "14:00",
+    "end": "15:22"
+  },
+  {
+    "date": "2024-11-09",
     "venue": "Vega-Scene",
     "venueSpecific": "Vega-3",
-    "name": "Kikis budservice (Japansk tale)",
-    "start": "16:00",
-    "end": "17:43"
-  },
-  {
-    "date": "2023-11-11",
-    "venue": "Colosseum-1",
-    "venueSpecific": "Colosseum-1",
-    "name": "Gutten og hegren",
-    "start": "17:30",
-    "end": "19:34"
-  },
-  {
-    "date": "2023-11-11",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "The Sales Girl",
-    "start": "17:45",
-    "end": "19:48"
-  },
-  {
-    "date": "2023-11-11",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "The Shadowless Tower",
-    "start": "17:45",
-    "end": "20:09"
-  },
-  {
-    "date": "2023-11-11",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Charulata",
-    "start": "18:00",
-    "end": "19:57"
-  },
-  {
-    "date": "2023-11-11",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Lost in the Night",
-    "start": "18:00",
-    "end": "20:02"
-  },
-  {
-    "date": "2023-11-11",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-3",
-    "name": "Mami Wata",
-    "start": "18:00",
-    "end": "19:47"
-  },
-  {
-    "date": "2023-11-11",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "Shayda",
-    "start": "18:00",
-    "end": "19:57"
-  },
-  {
-    "date": "2023-11-11",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "Ponyo på klippen ved havet (Japansk tale)",
-    "start": "18:15",
-    "end": "19:56"
-  },
-  {
-    "date": "2023-11-11",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "Property",
-    "start": "18:30",
-    "end": "20:10"
-  },
-  {
-    "date": "2023-11-11",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Tokyo Story",
-    "start": "20:15",
-    "end": "22:31"
-  },
-  {
-    "date": "2023-11-11",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Anhell69",
-    "start": "20:30",
-    "end": "21:45"
-  },
-  {
-    "date": "2023-11-11",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Only the River Flows",
-    "start": "20:45",
-    "end": "22:26"
-  },
-  {
-    "date": "2023-11-11",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "Nam June Paik: Moon Is the Oldest TV",
-    "start": "21:00",
-    "end": "22:47"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Ponyo på klippen ved havet (Norsk tale)",
-    "start": "11:00",
-    "end": "12:41"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Deep Sea",
-    "start": "12:30",
-    "end": "14:22"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Kortfilmperler fra Sør-Korea",
-    "start": "13:00",
-    "end": "13:42"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Perfect Days",
-    "start": "14:30",
-    "end": "16:33"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "White Torture",
+    "name": "New Dawn Fades",
     "start": "15:00",
-    "end": "15:59"
+    "end": "17:10"
   },
   {
-    "date": "2023-11-12",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Sambizanga",
+    "date": "2024-11-09",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "The Colors Within",
     "start": "15:15",
-    "end": "16:52"
+    "end": "16:56"
   },
   {
-    "date": "2023-11-12",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Miúcha, The Voice of Bossa Nova",
-    "start": "15:45",
-    "end": "17:23"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "Nausicaä - prinsessen fra Vindens dal",
-    "start": "16:00",
-    "end": "17:57"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "They Shot the Piano Player",
-    "start": "16:30",
-    "end": "18:13"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "About Dry Grasses",
-    "start": "17:00",
-    "end": "20:17"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-3",
-    "name": "The Siren",
-    "start": "17:00",
-    "end": "18:40"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "Joyland",
-    "start": "17:00",
-    "end": "19:06"
-  },
-  {
-    "date": "2023-11-12",
+    "date": "2024-11-09",
     "venue": "Cinemateket",
     "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Circumstance",
-    "start": "17:30",
-    "end": "19:17"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "Tótem",
-    "start": "17:45",
-    "end": "19:20"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "The Cemetery of Cinema",
-    "start": "18:00",
-    "end": "19:33"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "Critical Zone",
-    "start": "18:30",
-    "end": "20:09"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "Banel & Adama",
-    "start": "18:45",
-    "end": "20:12"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-3",
-    "name": "Adios Buenos Aires",
-    "start": "19:15",
-    "end": "20:45"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "The Eternal Memory",
-    "start": "19:30",
-    "end": "20:55"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "The Settlers",
-    "start": "20:00",
-    "end": "21:37"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Bantú Mama",
-    "start": "20:00",
-    "end": "21:17"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Sorcery",
-    "start": "20:30",
-    "end": "22:10"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "Love Life",
-    "start": "20:45",
-    "end": "22:48"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "Kobra Self Portrait",
-    "start": "20:45",
-    "end": "22:10"
-  },
-  {
-    "date": "2023-11-12",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Omen",
-    "start": "21:00",
-    "end": "22:30"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Youth (Spring)",
-    "start": "16:30",
-    "end": "20:02"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "Critical Zone",
-    "start": "17:30",
-    "end": "19:09"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Harakiri",
-    "start": "18:00",
-    "end": "20:13"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Laputa - Himmelslottet",
-    "start": "18:00",
-    "end": "20:05"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-3",
-    "name": "The Color of Love",
-    "start": "18:00",
-    "end": "18:52"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "The Eternal Memory",
-    "start": "18:00",
-    "end": "19:25"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "Mami Wata",
-    "start": "18:30",
-    "end": "20:17"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "Miúcha, The Voice of Bossa Nova",
-    "start": "18:30",
-    "end": "20:08"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "The Extortion",
-    "start": "19:45",
-    "end": "21:30"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "Property",
-    "start": "20:15",
-    "end": "21:55"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "DOOR",
-    "start": "20:30",
-    "end": "22:05"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Backstage",
-    "start": "20:45",
-    "end": "22:27"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "The Cemetery of Cinema",
-    "start": "20:45",
-    "end": "22:18"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "The Sales Girl",
-    "start": "20:45",
-    "end": "22:48"
-  },
-  {
-    "date": "2023-11-13",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "If Only I Could Hibernate",
-    "start": "21:00",
-    "end": "22:36"
-  },
-  {
-    "date": "2023-11-14",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "About Dry Grasses",
-    "start": "17:15",
-    "end": "20:32"
-  },
-  {
-    "date": "2023-11-14",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "Shayda",
-    "start": "17:45",
-    "end": "19:42"
-  },
-  {
-    "date": "2023-11-14",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Min nabo Totoro",
-    "start": "18:00",
-    "end": "19:26"
-  },
-  {
-    "date": "2023-11-14",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "The Siren",
-    "start": "18:00",
-    "end": "19:40"
-  },
-  {
-    "date": "2023-11-14",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-3",
-    "name": "Youth (Spring)",
-    "start": "18:00",
-    "end": "21:32"
-  },
-  {
-    "date": "2023-11-14",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "Art College 1994",
-    "start": "18:15",
-    "end": "20:13"
-  },
-  {
-    "date": "2023-11-14",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "Seven Winters in Tehran",
-    "start": "18:30",
-    "end": "20:07"
-  },
-  {
-    "date": "2023-11-14",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "We Are Guardians",
-    "start": "20:15",
-    "end": "21:40"
-  },
-  {
-    "date": "2023-11-14",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "The Cemetery of Cinema",
-    "start": "20:30",
-    "end": "22:03"
-  },
-  {
-    "date": "2023-11-14",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "Backstage",
-    "start": "20:45",
-    "end": "22:27"
-  },
-  {
-    "date": "2023-11-14",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "They Shot the Piano Player",
-    "start": "20:45",
-    "end": "22:28"
-  },
-  {
-    "date": "2023-11-14",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "In My Mother's Skin",
-    "start": "21:00",
-    "end": "22:37"
-  },
-  {
-    "date": "2023-11-14",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "The Breaking Ice",
-    "start": "21:00",
-    "end": "22:37"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "La gunguna",
-    "start": "16:30",
-    "end": "17:57"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "Seven Winters in Tehran",
-    "start": "17:00",
-    "end": "18:37"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "Tiger Stripes",
-    "start": "17:30",
-    "end": "19:05"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "The Color of Love",
-    "start": "17:30",
-    "end": "18:22"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-3",
-    "name": "Cassandro",
-    "start": "18:00",
-    "end": "19:47"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Porco Rosso",
-    "start": "18:00",
-    "end": "19:34"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "The Persian Version",
-    "start": "18:15",
-    "end": "20:02"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "Plan 75",
-    "start": "18:15",
-    "end": "20:08"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Deep Sea",
-    "start": "18:30",
-    "end": "20:22"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Candela",
-    "start": "18:45",
-    "end": "20:18"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "Perfect Days",
-    "start": "19:45",
-    "end": "21:48"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Love Life",
-    "start": "20:15",
-    "end": "22:18"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "Lost in the Night",
-    "start": "20:15",
-    "end": "22:17"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-3",
-    "name": "In My Mother's Skin",
-    "start": "20:15",
-    "end": "21:52"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Anhell69",
-    "start": "20:30",
-    "end": "21:45"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "Nam June Paik: Moon Is the Oldest TV",
-    "start": "20:45",
-    "end": "22:32"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "The Breaking Ice",
-    "start": "20:45",
-    "end": "22:22"
-  },
-  {
-    "date": "2023-11-15",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "If Only I Could Hibernate",
-    "start": "20:45",
-    "end": "22:21"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "Banel & Adama",
-    "start": "17:00",
-    "end": "18:27"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "The Shadowless Tower",
-    "start": "17:30",
-    "end": "19:54"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-3",
-    "name": "Miúcha, The Voice of Bossa Nova",
-    "start": "18:00",
-    "end": "19:38"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "Prinsesse Mononoke",
-    "start": "18:00",
-    "end": "20:14"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Total Trust",
-    "start": "18:00",
-    "end": "19:37"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Seven Winters in Tehran",
-    "start": "18:15",
-    "end": "19:52"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Tiger Stripes",
-    "start": "18:15",
-    "end": "19:50"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "Youth (Spring)",
-    "start": "19:00",
-    "end": "22:32"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "Joyland",
-    "start": "19:15",
-    "end": "21:21"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "DOOR",
-    "start": "20:15",
-    "end": "21:50"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-3",
-    "name": "Tótem",
-    "start": "20:15",
-    "end": "21:50"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "Love Life",
-    "start": "20:30",
-    "end": "22:33"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Omen",
-    "start": "20:45",
-    "end": "22:15"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "The Settlers",
-    "start": "20:45",
-    "end": "22:22"
-  },
-  {
-    "date": "2023-11-16",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "We Are Guardians",
-    "start": "20:45",
-    "end": "22:10"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "About Dry Grasses",
-    "start": "17:30",
-    "end": "20:47"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "Plan 75",
-    "start": "17:45",
-    "end": "19:38"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "Chihiro og heksene",
-    "start": "18:00",
-    "end": "20:05"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Tiger Stripes",
-    "start": "18:15",
-    "end": "19:50"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Ryuichi Sakamoto: CODA",
-    "start": "18:15",
-    "end": "19:55"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "Total Trust",
-    "start": "18:30",
-    "end": "20:07"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "If Only I Could Hibernate",
-    "start": "18:30",
-    "end": "20:06"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-3",
-    "name": "The Extortion",
-    "start": "18:30",
-    "end": "20:15"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Cosmopolite-Scene",
-    "venueSpecific": "Cosmopolite-Scene",
-    "name": "Xalé",
-    "start": "19:00",
-    "end": "20:41"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "Sorcery",
-    "start": "20:15",
-    "end": "21:55"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "In My Mother's Skin",
-    "start": "20:30",
-    "end": "22:07"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Moving",
-    "start": "20:30",
-    "end": "22:35"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "Tótem",
-    "start": "20:45",
-    "end": "22:20"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-3",
-    "name": "Perfect Days",
-    "start": "20:45",
-    "end": "22:48"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "Kobra Self Portrait",
-    "start": "20:45",
-    "end": "22:10"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "Aberrance",
-    "start": "20:45",
-    "end": "22:00"
-  },
-  {
-    "date": "2023-11-17",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Cassandro",
-    "start": "21:30",
-    "end": "23:17"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Tableau Ferraille",
-    "start": "13:30",
-    "end": "15:02"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-Salongen",
-    "name": "Kortfilmperler fra Sør-Korea",
-    "start": "13:30",
-    "end": "14:12"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "They Shot the Piano Player",
-    "start": "14:30",
-    "end": "16:13"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Circumstance",
-    "start": "15:45",
-    "end": "17:32"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "Det levende slottet",
-    "start": "16:00",
-    "end": "17:59"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Madame Brouette",
-    "start": "16:00",
-    "end": "17:44"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Banel & Adama",
-    "start": "16:30",
-    "end": "17:57"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "The Eternal Memory",
-    "start": "16:45",
-    "end": "18:10"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "The Persian Version",
-    "start": "17:00",
-    "end": "18:47"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-3",
-    "name": "The Shadowless Tower",
-    "start": "17:30",
-    "end": "19:54"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "Shayda",
-    "start": "18:00",
-    "end": "19:57"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Love Life",
-    "start": "18:15",
-    "end": "20:18"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Xalé",
-    "start": "18:30",
-    "end": "20:11"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "The Color of Love",
-    "start": "18:30",
-    "end": "19:22"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "The Breaking Ice",
-    "start": "18:30",
-    "end": "20:07"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "The Siren",
-    "start": "18:45",
-    "end": "20:25"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "Monster",
-    "start": "20:15",
-    "end": "22:21"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "Adios Buenos Aires",
-    "start": "20:30",
-    "end": "22:00"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Sorcery",
-    "start": "20:45",
-    "end": "22:25"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Plan 75",
-    "start": "20:45",
-    "end": "22:38"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-3",
-    "name": "Omen",
-    "start": "20:45",
-    "end": "22:15"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "Art College 1994",
-    "start": "20:45",
-    "end": "22:43"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Only the River Flows",
-    "start": "21:00",
-    "end": "22:41"
-  },
-  {
-    "date": "2023-11-18",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "Aberrance",
-    "start": "21:00",
-    "end": "22:15"
-  },
-  {
-    "date": "2023-11-19",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "The Persian Version",
-    "start": "13:00",
-    "end": "14:47"
-  },
-  {
-    "date": "2023-11-19",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Nam June Paik: Moon Is the Oldest TV",
-    "start": "13:30",
-    "end": "15:17"
-  },
-  {
-    "date": "2023-11-19",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "Xalé",
-    "start": "14:45",
-    "end": "16:26"
-  },
-  {
-    "date": "2023-11-19",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "Mami Wata",
-    "start": "15:00",
-    "end": "16:47"
-  },
-  {
-    "date": "2023-11-19",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-Salongen",
-    "name": "Kortfilmperler fra Sør-Korea",
-    "start": "15:00",
-    "end": "15:42"
-  },
-  {
-    "date": "2023-11-19",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Critical Zone",
+    "name": "Nocturnes",
     "start": "15:15",
-    "end": "16:54"
+    "end": "16:37"
   },
   {
-    "date": "2023-11-19",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "The Sales Girl",
+    "date": "2024-11-09",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "A Ravaging Wind",
     "start": "15:30",
-    "end": "17:33"
+    "end": "17:05"
   },
   {
-    "date": "2023-11-19",
+    "date": "2024-11-09",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "Bikechess",
+    "start": "15:30",
+    "end": "17:05"
+  },
+  {
+    "date": "2024-11-09",
     "venue": "Vika-Kino",
     "venueSpecific": "Vika-3",
-    "name": "Youth (Spring)",
-    "start": "16:00",
-    "end": "19:32"
+    "name": "Malta",
+    "start": "15:30",
+    "end": "17:07"
   },
   {
-    "date": "2023-11-19",
+    "date": "2024-11-09",
     "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "Vinden Stiger",
-    "start": "16:00",
-    "end": "18:06"
-  },
-  {
-    "date": "2023-11-19",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "The Takeover",
-    "start": "16:00",
-    "end": "16:33"
-  },
-  {
-    "date": "2023-11-19",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Kobra Self Portrait",
-    "start": "16:00",
+    "venueSpecific": "Vega-2",
+    "name": "The Legend of the Vagabond Queen of Lagos",
+    "start": "15:45",
     "end": "17:25"
   },
   {
-    "date": "2023-11-19",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-2",
-    "name": "About Dry Grasses",
-    "start": "17:00",
-    "end": "20:17"
-  },
-  {
-    "date": "2023-11-19",
+    "date": "2024-11-09",
     "venue": "Cinemateket",
     "venueSpecific": "Cinemateket-Tancred",
-    "name": "Deep Sea",
-    "start": "17:30",
-    "end": "19:22"
+    "name": "A Brighter Summer Day",
+    "start": "16:00",
+    "end": "19:57"
   },
   {
-    "date": "2023-11-19",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "Adios Buenos Aires",
-    "start": "17:45",
-    "end": "19:15"
-  },
-  {
-    "date": "2023-11-19",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Moving",
-    "start": "17:45",
-    "end": "19:50"
-  },
-  {
-    "date": "2023-11-19",
+    "date": "2024-11-09",
     "venue": "Cinemateket",
     "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Art College 1994",
+    "name": "Samia",
+    "start": "17:15",
+    "end": "18:57"
+  },
+  {
+    "date": "2024-11-09",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Tatami",
+    "start": "17:15",
+    "end": "19:00"
+  },
+  {
+    "date": "2024-11-09",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Pooja, Sir",
+    "start": "17:45",
+    "end": "19:40"
+  },
+  {
+    "date": "2024-11-09",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "Hollywoodgate",
+    "start": "18:00",
+    "end": "19:32"
+  },
+  {
+    "date": "2024-11-09",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Stranger",
+    "start": "18:00",
+    "end": "19:43"
+  },
+  {
+    "date": "2024-11-09",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Girls Will Be Girls",
     "start": "18:00",
     "end": "19:58"
   },
   {
-    "date": "2023-11-19",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-2",
-    "name": "Monster",
-    "start": "18:15",
-    "end": "20:21"
-  },
-  {
-    "date": "2023-11-19",
-    "venue": "Vega-Scene",
-    "venueSpecific": "Vega-3",
-    "name": "We Are Guardians",
-    "start": "18:45",
-    "end": "20:10"
-  },
-  {
-    "date": "2023-11-19",
-    "venue": "Vika-Kino",
-    "venueSpecific": "Vika-1",
-    "name": "Argentina, 1985",
-    "start": "19:45",
-    "end": "22:05"
-  },
-  {
-    "date": "2023-11-19",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Tancred",
-    "name": "Perfect Days",
-    "start": "20:00",
-    "end": "22:03"
-  },
-  {
-    "date": "2023-11-19",
+    "date": "2024-11-09",
     "venue": "Vika-Kino",
     "venueSpecific": "Vika-3",
-    "name": "Total Trust",
-    "start": "20:15",
-    "end": "21:52"
+    "name": "Cu Li Never Cries",
+    "start": "18:00",
+    "end": "19:32"
   },
   {
-    "date": "2023-11-19",
+    "date": "2024-11-09",
+    "venue": "Klingenberg",
+    "venueSpecific": "Klingenberg-1",
+    "name": "All We Imagine As Light",
+    "start": "18:00",
+    "end": "19:50"
+  },
+  {
+    "date": "2024-11-09",
     "venue": "Vega-Scene",
-    "venueSpecific": "Vega-1",
-    "name": "Monster",
+    "venueSpecific": "Vega-2",
+    "name": "Who Do I Belong To?",
+    "start": "18:15",
+    "end": "20:12"
+  },
+  {
+    "date": "2024-11-09",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "REI",
+    "start": "19:30",
+    "end": "22:39"
+  },
+  {
+    "date": "2024-11-09",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Full River Red",
+    "start": "20:00",
+    "end": "22:38"
+  },
+  {
+    "date": "2024-11-09",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Pepe",
+    "start": "20:30",
+    "end": "22:32"
+  },
+  {
+    "date": "2024-11-09",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Sujo",
     "start": "20:30",
     "end": "22:36"
   },
   {
-    "date": "2023-11-19",
-    "venue": "Cinemateket",
-    "venueSpecific": "Cinemateket-Lillebil",
-    "name": "Cassandro",
+    "date": "2024-11-09",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "Nameless Gangster: Rules of the Time",
     "start": "20:30",
-    "end": "22:17"
+    "end": "22:44"
   },
   {
-    "date": "2023-11-19",
+    "date": "2024-11-09",
     "venue": "Vega-Scene",
     "venueSpecific": "Vega-3",
-    "name": "Joyland",
-    "start": "20:45",
-    "end": "22:51"
+    "name": "The Suspect",
+    "start": "20:30",
+    "end": "22:47"
   },
   {
-    "date": "2023-11-19",
+    "date": "2024-11-09",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Black Dog",
+    "start": "20:45",
+    "end": "22:41"
+  },
+  {
+    "date": "2024-11-09",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "1978",
+    "start": "20:45",
+    "end": "22:05"
+  },
+  {
+    "date": "2024-11-09",
     "venue": "Vega-Scene",
     "venueSpecific": "Vega-2",
-    "name": "Anhell69",
+    "name": "Something Old, Something New, Something Borrowed",
     "start": "21:00",
+    "end": "22:40"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Kortfilmperler fra Mexico",
+    "start": "11:00",
+    "end": "11:47"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Feliciano, Rambo & Ronaldo",
+    "start": "13:00",
+    "end": "14:23"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "The Michoacan File",
+    "start": "13:30",
+    "end": "15:01"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Piro Piro",
+    "start": "13:30",
+    "end": "14:12"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Flow",
+    "start": "13:30",
+    "end": "14:54"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Eat Drink Man Woman",
+    "start": "14:00",
+    "end": "16:04"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "The Nights Still Smell of Gunpowder",
+    "start": "14:00",
+    "end": "15:33"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "A Taxi Driver",
+    "start": "14:30",
+    "end": "16:47"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "En liten bit av kaken (My Favourite Cake)",
+    "start": "14:30",
+    "end": "16:07"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Parasitt",
+    "start": "14:45",
+    "end": "16:57"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-Salongen",
+    "name": "Knøttekino x Film fra Sør",
+    "start": "15:00",
+    "end": "15:42"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Little Forest",
+    "start": "15:00",
+    "end": "16:43"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "The Legend of the Vagabond Queen of Lagos",
+    "start": "15:30",
+    "end": "17:10"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Wisdom of Happiness",
+    "start": "15:45",
+    "end": "17:15"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "Munken og geværet",
+    "start": "15:45",
+    "end": "17:32"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "The Son and the Moon",
+    "start": "16:15",
+    "end": "17:42"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Fish Memories",
+    "start": "17:00",
+    "end": "18:57"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Black Tea",
+    "start": "17:00",
+    "end": "18:50"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "The Throne",
+    "start": "17:30",
+    "end": "19:35"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Smugglers",
+    "start": "17:30",
+    "end": "19:39"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Nameless Gangster: Rules of the Time",
+    "start": "17:45",
+    "end": "19:59"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Bikechess",
+    "start": "18:00",
+    "end": "19:35"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Agent of Happiness",
+    "start": "18:15",
+    "end": "19:49"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "Reinas",
+    "start": "18:15",
+    "end": "19:59"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Shambhala",
+    "start": "19:30",
+    "end": "22:00"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "A Man of Integrity (Mannen mot strømmen)",
+    "start": "20:00",
+    "end": "21:57"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Farming the Revolution",
+    "start": "20:15",
+    "end": "21:57"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "The Suspect",
+    "start": "20:15",
+    "end": "22:32"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Santosh",
+    "start": "20:30",
+    "end": "22:38"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Exhuma",
+    "start": "20:30",
+    "end": "22:44"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "A Hard Day",
+    "start": "20:45",
+    "end": "22:36"
+  },
+  {
+    "date": "2024-11-10",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "The Birth of Kitarō: The Mystery of GeGeGe",
+    "start": "20:45",
+    "end": "22:29"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Girls Will Be Girls",
+    "start": "13:00",
+    "end": "14:58"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Frida - Still Life",
+    "start": "15:30",
+    "end": "17:18"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Igualada",
+    "start": "17:15",
+    "end": "18:33"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Tatami",
+    "start": "17:30",
+    "end": "19:15"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Little Forest",
+    "start": "17:45",
+    "end": "19:28"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "The Throne",
+    "start": "17:45",
+    "end": "19:50"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "The Nights Still Smell of Gunpowder",
+    "start": "17:45",
+    "end": "19:18"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Lagaan: Once Upon a Time in India",
+    "start": "18:00",
+    "end": "21:44"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Venice",
+    "start": "18:00",
+    "end": "19:30"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Lula",
+    "start": "18:30",
+    "end": "20:00"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Creation of the Gods I: Kingdom of Storms",
+    "start": "20:00",
+    "end": "22:28"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "The Falling Sky",
+    "start": "20:00",
+    "end": "21:50"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "The Wayward Cloud",
+    "start": "20:00",
+    "end": "21:52"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Shambhala",
+    "start": "20:15",
+    "end": "22:45"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "The Dog Thief",
+    "start": "20:30",
+    "end": "22:00"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "My Sunshine",
+    "start": "20:30",
+    "end": "22:10"
+  },
+  {
+    "date": "2024-11-11",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Pooja, Sir",
+    "start": "20:45",
+    "end": "22:40"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Dahomey",
+    "start": "13:00",
+    "end": "14:08"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Malta",
+    "start": "14:30",
+    "end": "16:07"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Dahomey",
+    "start": "16:45",
+    "end": "17:53"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "A Ravaging Wind",
+    "start": "17:00",
+    "end": "18:35"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "The Village Next to Paradise",
+    "start": "17:00",
+    "end": "19:12"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "New Dawn Fades",
+    "start": "17:00",
+    "end": "19:10"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Black Dog",
+    "start": "17:15",
+    "end": "19:11"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "The Golden Thread",
+    "start": "17:30",
+    "end": "19:00"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Nasjonalmuseet",
+    "venueSpecific": "Nasjonalmuseet",
+    "name": "Frida",
+    "start": "17:30",
+    "end": "18:57"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Anne-Cath.-Vestlys-plass-(utenfor-Deichman-Bjørvika)",
+    "venueSpecific": "Anne-Cath.-Vestlys-plass-(utenfor-Deichman-Bjørvika)",
+    "name": "5 Centimeters per Second",
+    "start": "18:00",
+    "end": "19:03"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Mexico 86",
+    "start": "18:30",
+    "end": "19:59"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Hollywoodgate",
+    "start": "18:30",
+    "end": "20:02"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "The Seed of the Sacred Fig",
+    "start": "19:30",
+    "end": "22:18"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Rebels of the Neon God",
+    "start": "19:45",
+    "end": "21:31"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Full River Red",
+    "start": "20:00",
+    "end": "22:38"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "There Is No Evil (Det finnes ingen djevel)",
+    "start": "20:00",
+    "end": "22:31"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "Pepe",
+    "start": "20:30",
+    "end": "22:32"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Samia",
+    "start": "20:30",
+    "end": "22:12"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "The Shameless",
+    "start": "20:45",
+    "end": "22:39"
+  },
+  {
+    "date": "2024-11-12",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Everybody Loves Touda",
+    "start": "21:00",
+    "end": "22:42"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Cu Li Never Cries",
+    "start": "13:30",
+    "end": "15:02"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "In the Belly of a Tiger",
+    "start": "15:45",
+    "end": "17:16"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "My Sunshine",
+    "start": "17:00",
+    "end": "18:40"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Kvinnen i sanden",
+    "start": "17:00",
+    "end": "19:27"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Taipei Story",
+    "start": "17:30",
+    "end": "19:20"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Girls Will Be Girls",
+    "start": "17:30",
+    "end": "19:28"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Igualada",
+    "start": "18:00",
+    "end": "19:18"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "Black Box Diaries",
+    "start": "18:00",
+    "end": "19:42"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Anne-Cath.-Vestlys-plass-(utenfor-Deichman-Bjørvika)",
+    "venueSpecific": "Anne-Cath.-Vestlys-plass-(utenfor-Deichman-Bjørvika)",
+    "name": "In the Mood for Love",
+    "start": "18:00",
+    "end": "19:38"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Mexico 86",
+    "start": "18:15",
+    "end": "19:44"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Ernest Cole: Lost and Found",
+    "start": "18:30",
+    "end": "20:15"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Shambhala",
+    "start": "20:00",
+    "end": "22:30"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Wisdom of Happiness",
+    "start": "20:00",
+    "end": "21:30"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Grand Tour",
+    "start": "20:30",
+    "end": "22:38"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "The Assassin",
+    "start": "20:30",
     "end": "22:15"
   },
   {
-    "date": "2023-11-14",
-    "venue": "Cinemateket",
-    "venueSpecific": "",
-    "name": "Ryuichi Sakamoto doublebill",
-    "start": "18:00",
+    "date": "2024-11-13",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Something Old, Something New, Something Borrowed",
+    "start": "20:30",
     "end": "22:10"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Sujo",
+    "start": "20:30",
+    "end": "22:36"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "Tatami",
+    "start": "20:30",
+    "end": "22:15"
+  },
+  {
+    "date": "2024-11-13",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "1978",
+    "start": "21:00",
+    "end": "22:20"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "New Dawn Fades",
+    "start": "13:30",
+    "end": "15:40"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Stranger",
+    "start": "16:15",
+    "end": "17:58"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Farming the Revolution",
+    "start": "16:45",
+    "end": "18:27"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "The Son and the Moon",
+    "start": "17:15",
+    "end": "18:42"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "En liten bit av kaken (My Favourite Cake)",
+    "start": "17:30",
+    "end": "19:07"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "All We Imagine As Light",
+    "start": "17:30",
+    "end": "19:20"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "A Taxi Driver",
+    "start": "17:45",
+    "end": "20:02"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Little Forest",
+    "start": "18:00",
+    "end": "19:43"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "Agent of Happiness",
+    "start": "18:00",
+    "end": "19:34"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "My Stolen Planet",
+    "start": "18:45",
+    "end": "20:07"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Lula",
+    "start": "20:00",
+    "end": "21:30"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "The Seed of the Sacred Fig",
+    "start": "20:00",
+    "end": "22:48"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Reinas",
+    "start": "20:15",
+    "end": "21:59"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Venice",
+    "start": "20:15",
+    "end": "21:45"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Black Dog",
+    "start": "20:45",
+    "end": "22:41"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Santosh",
+    "start": "20:45",
+    "end": "22:53"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "The Shameless",
+    "start": "20:45",
+    "end": "22:39"
+  },
+  {
+    "date": "2024-11-14",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "A Hard Day",
+    "start": "20:45",
+    "end": "22:36"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "All We Imagine As Light",
+    "start": "08:00",
+    "end": "09:50"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "The Dog Thief",
+    "start": "13:45",
+    "end": "15:15"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "The Village Next to Paradise",
+    "start": "15:00",
+    "end": "17:12"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Gulabi Gang",
+    "start": "16:00",
+    "end": "17:36"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Munken og geværet",
+    "start": "17:30",
+    "end": "19:17"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Dahomey",
+    "start": "17:45",
+    "end": "18:53"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Ernest Cole: Lost and Found",
+    "start": "17:45",
+    "end": "19:30"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "Black Box Diaries",
+    "start": "18:00",
+    "end": "19:42"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Fish Memories",
+    "start": "18:00",
+    "end": "19:57"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Frida - Still Life",
+    "start": "18:00",
+    "end": "19:48"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "The Son and the Moon",
+    "start": "18:00",
+    "end": "19:27"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "In the Belly of a Tiger",
+    "start": "18:15",
+    "end": "19:46"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Something Old, Something New, Something Borrowed",
+    "start": "18:15",
+    "end": "19:55"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Ryuichi Sakamoto | OPUS",
+    "start": "20:00",
+    "end": "21:43"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Creation of the Gods I: Kingdom of Storms",
+    "start": "20:15",
+    "end": "22:43"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "SØRprise",
+    "start": "20:30",
+    "end": "22:40"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Exhuma",
+    "start": "20:30",
+    "end": "22:44"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Black Tea",
+    "start": "20:30",
+    "end": "22:20"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "The Colors Within",
+    "start": "20:45",
+    "end": "22:26"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Mapantsula",
+    "start": "20:45",
+    "end": "22:25"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "Hollywoodgate",
+    "start": "20:45",
+    "end": "22:17"
+  },
+  {
+    "date": "2024-11-15",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "Who Do I Belong To?",
+    "start": "20:45",
+    "end": "22:42"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Kortfilmperler fra Mexico",
+    "start": "11:00",
+    "end": "11:47"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "A Ravaging Wind",
+    "start": "13:00",
+    "end": "14:35"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "Pooja, Sir",
+    "start": "13:00",
+    "end": "14:55"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Flow",
+    "start": "13:00",
+    "end": "14:24"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Feliciano, Rambo & Ronaldo",
+    "start": "13:00",
+    "end": "14:23"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Wisdom of Happiness",
+    "start": "13:15",
+    "end": "14:45"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "The Legend of the Vagabond Queen of Lagos",
+    "start": "13:15",
+    "end": "14:55"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "The Falling Sky",
+    "start": "13:15",
+    "end": "15:05"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "In the Belly of a Tiger",
+    "start": "13:15",
+    "end": "14:46"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "The Village Next to Paradise",
+    "start": "13:45",
+    "end": "15:57"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Black Tea",
+    "start": "15:00",
+    "end": "16:50"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "En liten bit av kaken (My Favourite Cake)",
+    "start": "15:00",
+    "end": "16:37"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Farming the Revolution",
+    "start": "15:30",
+    "end": "17:12"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "A Taxi Driver",
+    "start": "15:30",
+    "end": "17:47"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Mexico 86",
+    "start": "15:30",
+    "end": "16:59"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "Everybody Loves Touda",
+    "start": "15:45",
+    "end": "17:27"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "Igualada",
+    "start": "15:45",
+    "end": "17:03"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Dahomey",
+    "start": "16:00",
+    "end": "17:08"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Shambhala",
+    "start": "16:45",
+    "end": "19:15"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "The Birth of Kitarō: The Mystery of GeGeGe",
+    "start": "17:30",
+    "end": "19:14"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "All We Imagine As Light",
+    "start": "17:30",
+    "end": "19:20"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Fish Memories",
+    "start": "18:00",
+    "end": "19:57"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Black Box Diaries",
+    "start": "18:00",
+    "end": "19:42"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Ernest Cole: Lost and Found",
+    "start": "18:00",
+    "end": "19:45"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Agent of Happiness",
+    "start": "18:15",
+    "end": "19:49"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "A Hard Day",
+    "start": "18:15",
+    "end": "20:06"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "Stranger",
+    "start": "18:15",
+    "end": "19:58"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Cosmopolite-Scene",
+    "venueSpecific": "Cosmopolite-Scene",
+    "name": "The Michoacan File",
+    "start": "19:00",
+    "end": "20:31"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "The Seed of the Sacred Fig",
+    "start": "19:45",
+    "end": "22:33"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Smugglers",
+    "start": "20:00",
+    "end": "22:09"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Creation of the Gods I: Kingdom of Storms",
+    "start": "20:15",
+    "end": "22:43"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Santosh",
+    "start": "20:30",
+    "end": "22:38"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "The Shameless",
+    "start": "20:30",
+    "end": "22:24"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "Pepe",
+    "start": "20:30",
+    "end": "22:32"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "1978",
+    "start": "20:45",
+    "end": "22:05"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Reinas",
+    "start": "20:45",
+    "end": "22:29"
+  },
+  {
+    "date": "2024-11-16",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "Bikechess",
+    "start": "20:45",
+    "end": "22:20"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Kortfilmperler fra Mexico",
+    "start": "11:00",
+    "end": "11:47"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Frida - Still Life",
+    "start": "13:00",
+    "end": "14:48"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Hjortestien (Evil does Not Exist)",
+    "start": "13:00",
+    "end": "14:46"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "The Colors Within",
+    "start": "13:15",
+    "end": "14:56"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Malta",
+    "start": "13:15",
+    "end": "14:52"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Flow",
+    "start": "13:30",
+    "end": "14:54"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Munken og geværet",
+    "start": "13:30",
+    "end": "15:17"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "En liten bit av kaken (My Favourite Cake)",
+    "start": "14:00",
+    "end": "15:37"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "Nocturnes",
+    "start": "14:15",
+    "end": "15:37"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "Lula",
+    "start": "14:15",
+    "end": "15:45"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-Salongen",
+    "name": "Knøttekino x Film fra Sør",
+    "start": "15:00",
+    "end": "15:42"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "5 Centimeters per Second",
+    "start": "15:30",
+    "end": "16:33"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Samia",
+    "start": "15:30",
+    "end": "17:12"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Frida",
+    "start": "15:30",
+    "end": "16:57"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "The Dog Thief",
+    "start": "15:45",
+    "end": "17:15"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Hjortestien (Evil does Not Exist)",
+    "start": "16:00",
+    "end": "17:46"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Under kirsebærtrærne",
+    "start": "16:00",
+    "end": "17:53"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "The Golden Thread",
+    "start": "16:30",
+    "end": "18:00"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "Nameless Gangster: Rules of the Time",
+    "start": "16:30",
+    "end": "18:44"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "Sujo",
+    "start": "16:45",
+    "end": "18:51"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "My Sunshine",
+    "start": "17:15",
+    "end": "18:55"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Girls Will Be Girls",
+    "start": "18:00",
+    "end": "19:58"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Hjortestien (Evil does Not Exist)",
+    "start": "18:00",
+    "end": "19:46"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "The Assassin",
+    "start": "18:15",
+    "end": "20:00"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "Ryuichi Sakamoto | OPUS",
+    "start": "18:30",
+    "end": "20:13"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-1",
+    "name": "Black Dog",
+    "start": "18:30",
+    "end": "20:26"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-4",
+    "name": "My Stolen Planet",
+    "start": "19:00",
+    "end": "20:22"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-3",
+    "name": "REI",
+    "start": "19:30",
+    "end": "22:39"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-3",
+    "name": "The Suspect",
+    "start": "19:30",
+    "end": "21:47"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vika-Kino",
+    "venueSpecific": "Vika-2",
+    "name": "The Throne",
+    "start": "19:30",
+    "end": "21:35"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Tancred",
+    "name": "Grand Tour",
+    "start": "20:15",
+    "end": "22:23"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Cinemateket",
+    "venueSpecific": "Cinemateket-Lillebil",
+    "name": "Cu Li Never Cries",
+    "start": "20:30",
+    "end": "22:02"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-2",
+    "name": "Perfect Days",
+    "start": "20:45",
+    "end": "22:48"
+  },
+  {
+    "date": "2024-11-17",
+    "venue": "Vega-Scene",
+    "venueSpecific": "Vega-1",
+    "name": "The Birth of Kitarō: The Mystery of GeGeGe",
+    "start": "21:00",
+    "end": "22:44"
   }
 ]
