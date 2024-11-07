@@ -2,21 +2,34 @@
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
+import {useEffect, useState} from "react"
 import program from './program.json'
-import {useEffect, useMemo, useState} from "react";
-import {cartesian, hasOverlap, stringToColour} from "./utils.js";
+import {fixDates} from "./utils.js";
 
+const worker = new Worker(new URL('./worker.js', import.meta.url), {type: 'module'})
+worker.onerror = e => console.error('worker error!', e)
 
-const events = program.map(f => ({
-  film: f.name,
-  title: `${f.name} (${f.venueSpecific})`,
-  start: new Date(`${f.date}T${f.start}`),
-  end: new Date(`${f.date}T${f.end}`),
-  color: stringToColour(f.venue),
-  venue: f.venue
-}))
+function configureWorker(configuration) {
+  worker.postMessage({
+    type: 'configure',
+    configuration
+  })
+}
 
-const currentYear = events[0].start.getFullYear()
+function getResults() {
+  let resolvePromise
+  const promise = new Promise((resolve => resolvePromise = resolve))
+  const callback = (message)=> { resolvePromise(message.data)}
+  worker.addEventListener('message', callback)
+  promise.then(()=> worker.removeEventListener('message', callback))
+  worker.postMessage({
+    type:'getResults'
+  })
+  return promise
+}
+
+const startDate = new Date(program[0].date)
+const currentYear = startDate.getFullYear()
 if(localStorage.getItem('year') !== currentYear.toString()) {
   console.log('clear')
   localStorage.clear()
@@ -46,39 +59,34 @@ const travelTimes = {
   }
 }
 
-const eventsByName = events.reduce((acc, event) => {
-  acc[event.film] = [...(acc[event.film] ?? []), event]
-  return acc
-}, {})
+const filmTitles = Array.from(program.reduce((acc, val) => (acc.add(val.name), acc), new Set())).sort()
 
-const filmTitles = Object.keys(eventsByName).sort()
+configureWorker({
+  program,
+  travelTimes,
+  margin
+})
 
-//TODO: rydd opp den her og hvor den bruke. hack
-function fixDates(e){
-  return {
-    ...e, start: new Date(e.start), end: new Date(e.end)
-  }
+function useLocalStorageState(key, initialValue, transformFn) {
+  let initialState = JSON.parse(localStorage.getItem(key))?? initialValue
+  if(transformFn) initialState = transformFn(initialState)
+  const [state, setState] = useState(initialState)
+
+  useEffect(() => {
+    localStorage.setItem(key, JSON.stringify(state))
+  }, [key, state])
+
+  return [state, setState]
 }
 
 function App() {
-  const [selectedFilms, setSelectedFilms] = useState(JSON.parse(localStorage.getItem('selectedFilms')) ?? [])
-  const [selectedPlan, setSelectedPlan] = useState(0)
-  const [excludeEvents, setExcludeEvents] = useState((JSON.parse(localStorage.getItem('excludeEvents'))??[]).map(fixDates))
-
-  const [lockedEvents, setLockedEvents] = useState((JSON.parse(localStorage.getItem('lockedEvents')) ?? {}))
-
-
-  useEffect(() => {
-    localStorage.setItem('selectedFilms', JSON.stringify(selectedFilms))
-  }, [selectedFilms])
-
-  useEffect(() => {
-    localStorage.setItem('excludeEvents', JSON.stringify(excludeEvents))
-  }, [excludeEvents])
-
-  useEffect(() => {
-    localStorage.setItem('lockedEvents', JSON.stringify(lockedEvents))
-  }, [lockedEvents])
+  const [selectedFilms, setSelectedFilms] = useLocalStorageState('selectedFilms', [])
+  const [selectedPlan, setSelectedPlan] = useLocalStorageState('selectedPlan', 0)
+  const [excludeEvents, setExcludeEvents] = useLocalStorageState('excludeEvents',[], v=>v.map(fixDates))
+  const [lockedEvents, setLockedEvents] = useLocalStorageState('lockedEvents',{})
+  const [plans, setPlans] = useState([])
+  const [combinations, setCombinations] = useState(0)
+  const [loading, setLoading] = useState(true)
 
   function addFilm(film) {
     setSelectedFilms([...selectedFilms, film])
@@ -88,26 +96,23 @@ function App() {
     setSelectedFilms(selectedFilms.filter(f => f !== film))
   }
 
-  const plans = useMemo(() => {
-    console.log('locked', lockedEvents)
-    if (selectedFilms.length === 0) return []
-    if (selectedFilms.length === 1) return eventsByName[selectedFilms[0]].map(f=>[f])
-    const selectedEvents = selectedFilms.map(t => lockedEvents[t]?.map(fixDates) ?? eventsByName[t])
-    const product = cartesian(...selectedEvents)
-    return product.filter(plan => !hasOverlap([...plan, ...excludeEvents], travelTimes, margin))
-  }, [selectedFilms, excludeEvents, lockedEvents])
-
-
-  const totalPlans = useMemo(()=>  {
-    if (selectedFilms.length === 0) return 0
-    return selectedFilms.reduce((acc, val) => {
-      return acc*eventsByName[val].length
-    }, 1)
-  }, [selectedFilms])
-
   useEffect(() => {
-    setSelectedPlan(0)
-  }, [plans]);
+    if(selectedFilms != null && excludeEvents != null && lockedEvents != null) {
+      setSelectedPlan(0)
+      const timeout = setTimeout(()=>setLoading(true), 150)
+      configureWorker({
+        selectedFilms, excludeEvents, lockedEvents
+      })
+      getResults().then(results => {
+        console.log('RESULTS', results)
+        setPlans(results.plans)
+        setCombinations(results.combinations)
+      }).finally(()=>{
+        clearTimeout(timeout)
+        setLoading(false)
+      })
+    }
+  }, [selectedFilms, excludeEvents, lockedEvents])
 
   return (
     <>
@@ -126,23 +131,43 @@ function App() {
             </label>))}
 
         </div>
-        <div style={{height:"100vh", overflow:"auto", flex: "1", textAlign: "left"}}>
+        <div style={{height: "100vh", overflow: "auto", flex: "1", textAlign: "left", position:"relative"}}>
+          {loading && <div style={{
+            background: "#fffb",
+            height: "100%",
+            width: "100%",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            zIndex: "1000",
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}>
+            Et øyeblikk...
+          </div>}
           <button
             disabled={selectedPlan === 0}
-            onClick={()=>{setSelectedPlan(selectedPlan-1)}}
-          >forrige plan</button>
-          <span style={{margin: "0 0.5rem"}}>Plan {selectedPlan+1} av {plans.length} </span>
+            onClick={() => {
+              setSelectedPlan(selectedPlan - 1)
+            }}
+          >forrige plan
+          </button>
+          <span style={{margin: "0 0.5rem"}}>Plan {selectedPlan + 1} av {plans.length} </span>
           <button
-            disabled={selectedPlan >= plans.length-1}
-            onClick={()=>{setSelectedPlan(selectedPlan+1)}}
-          >neste plan</button>
-          <span style={{margin: "0 0.5rem"}}> Totale kombinasjoner {totalPlans}</span>
+            disabled={selectedPlan >= plans.length - 1}
+            onClick={() => {
+              setSelectedPlan(selectedPlan + 1)
+            }}
+          >neste plan
+          </button>
+          <span style={{margin: "0 0.5rem"}}> Totale kombinasjoner {combinations}</span>
           <br/><br/>
           <FullCalendar
             plugins={[timeGridPlugin, interactionPlugin]}
             headerToolbar={null}
             initialView="ffs"
-            initialDate={events[0].start}
+            initialDate={startDate}
             slotMinTime={'11:00:00'}
             slotMaxTime={'23:59:59'}
             eventSources={[
@@ -151,13 +176,13 @@ function App() {
             ]}
             height={"44rem"}
             nowIndicator={true}
-            eventClick={({event})=> {
+            eventClick={({event}) => {
 
               console.log('event click!', event.toJSON())
-              if(event.title === 'Opptatt') {
+              if (event.title === 'Opptatt') {
                 setExcludeEvents(excludeEvents.filter(e => e.start.getTime() !== event.start.getTime()))
               } else {
-                if(lockedEvents[event.extendedProps.film]) {
+                if (lockedEvents[event.extendedProps.film]) {
                   setLockedEvents({
                     ...lockedEvents,
                     [event.extendedProps.film]: undefined
@@ -175,7 +200,7 @@ function App() {
               }
             }}
             selectable={true}
-            select={({start, end})=>setExcludeEvents([...excludeEvents, {
+            select={({start, end}) => setExcludeEvents([...excludeEvents, {
               start, end, title: "Opptatt", color: "#777", type: 'exclude'
             }])}
             views={{

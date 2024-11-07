@@ -25,6 +25,7 @@ export function cartesian(...args) {
   helper([], 0);
   return r;
 }
+
 export function* cartesianGenerator(...args) {
   const  max = args.length-1;
   function* helper(arr, i) {
@@ -61,4 +62,11 @@ export function hasOverlap(events, travelTimes = {}, margin = 0) {
     }
   }
   return false
+}
+
+//TODO: rydd opp den her og hvor den bruke. hack
+export function fixDates(e){
+  return {
+    ...e, start: new Date(e.start), end: new Date(e.end)
+  }
 }
