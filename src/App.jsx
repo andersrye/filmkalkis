@@ -2,7 +2,7 @@ import './App.css'
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
-import {useEffect, useReducer, useState} from "react"
+import {useEffect, useReducer, useRef, useState} from "react"
 import program from './program.json'
 import {fixDates, generateId, useLocalStorageState} from "./utils.js";
 
@@ -66,8 +66,6 @@ function App() {
   const [combinations, setCombinations] = useState(0)
   const [loading, setLoading] = useState(false)
 
-  useEffect(() => console.log('PLANS', plans), [plans])
-
   function addFilm(film) {
     setSelectedFilms([...selectedFilms, film])
   }
@@ -119,6 +117,7 @@ function App() {
           >forrige plan
           </button>
           <span style={{margin: "0 0.5rem"}}>Plan {selectedPlan + 1} av {plans.length} </span>
+          {loading && <span className={'loader-container'}><span className={'loader'}></span></span>}
           <button
             disabled={selectedPlan >= plans.length - 1}
             onClick={() => {
@@ -127,12 +126,12 @@ function App() {
           >neste plan
           </button>
           <span style={{margin: "0 0.5rem"}}> Totale kombinasjoner {combinations}</span>
-          {loading && <span className={'loader-container'}><span className={'loader'}></span></span>}
           <br/><br/>
           <FullCalendar
             plugins={[timeGridPlugin, interactionPlugin]}
             headerToolbar={null}
             initialView="ffs"
+            locale={"no"}
             initialDate={startDate}
             slotMinTime={'11:00:00'}
             slotMaxTime={'23:59:59'}

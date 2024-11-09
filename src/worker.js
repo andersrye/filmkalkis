@@ -58,18 +58,41 @@ function* calculatePlans(selectedFilms, lockedEvents, excludeEvents) {
     }
   }
 }
+const sleep = (ms = 0) => new Promise(r => setTimeout(r, ms))
 
+let working = false
+let abort = false
 onmessage = async function(message) {
   const {data: {type}, data} = message
   console.log('WORKER message recieved', data, 'type', type)
   if(type === 'calculate') {
     const {reqId, selectedFilms, excludeEvents, lockedEvents} = data
+    if(working) {
+      abort = true
+      console.log(`WORKER waiting ${reqId}`)
+      while(working) await sleep(1)
+    }
+    console.log(`WORKER starting ${reqId}`)
+    working = true
     const combinations = calculateCombinations(selectedFilms)
     postMessage({type: 'combinations', reqId, combinations})
+    let count = 0
     for (const plan of calculatePlans(selectedFilms, lockedEvents, excludeEvents)) {
+      if(count++ % 100 === 0) {
+        await sleep()
+        if(abort) break
+      }
       postMessage({type: 'plan', reqId, plan})
     }
-    postMessage({type: 'end', reqId})
+    if(abort) {
+      console.log(`WORKER aborted ${reqId}`)
+      abort = false
+      postMessage({type: 'abort', reqId})
+    } else {
+      console.log(`WORKER finished ${reqId}`)
+      postMessage({type: 'end', reqId})
+    }
+    working = false
   } else {
     console.error("WORKER unhandled message", message)
   }
