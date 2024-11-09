@@ -1,4 +1,3 @@
-// import './App.css'
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
@@ -9,11 +8,14 @@ import {fixDates, generateId, useLocalStorageState} from "./utils.js";
 const worker = new Worker(new URL('./worker.js', import.meta.url), {type: 'module'})
 worker.onerror = e => console.error('worker error!', e)
 
-function init(program, travelTimes, margin) {
-  worker.postMessage({
-    type: 'init',
-    configuration: { program, travelTimes, margin }
-  })
+const filmTitles = Array.from(program.reduce((acc, val) => (acc.add(val.name), acc), new Set())).sort()
+const startDate = new Date(program[0].date)
+const currentYear = startDate.getFullYear()
+
+if(localStorage.getItem('year') !== currentYear.toString()) {
+  console.log('clear')
+  localStorage.clear()
+  localStorage.setItem('year', currentYear.toString())
 }
 
 function calculate(selectedFilms, excludeEvents, lockedEvents) {
@@ -36,41 +38,6 @@ function calculate(selectedFilms, excludeEvents, lockedEvents) {
   })
   return promise
 }
-
-const startDate = new Date(program[0].date)
-const currentYear = startDate.getFullYear()
-if(localStorage.getItem('year') !== currentYear.toString()) {
-  console.log('clear')
-  localStorage.clear()
-  localStorage.setItem('year', currentYear.toString())
-}
-
-const margin = 5*60000
-const travelTimeVikaVega= 26*60000
-const travelTimeCinVega= 19*60000
-const travelTimeVikaCin= 16*60000
-
-const travelTimes = {
-  "Cinemateket": {
-    "Vika-Kino": travelTimeVikaCin,
-    "VegaScene": travelTimeCinVega,
-    "Cinemateket": 0,
-  },
-  "Vika-Kino": {
-    "Vika-Kino": 0,
-    "VegaScene": travelTimeCinVega,
-    "Cinemateket": travelTimeVikaCin,
-  },
-  "Vega-Scene": {
-    "Vika-Kino": travelTimeVikaVega,
-    "VegaScene": 0,
-    "Cinemateket": travelTimeCinVega,
-  }
-}
-
-const filmTitles = Array.from(program.reduce((acc, val) => (acc.add(val.name), acc), new Set())).sort()
-
-init(program, travelTimes, margin)
 
 function planReducer(acc, cmd) {
   if(cmd.type === 'reset') {

@@ -1,21 +1,42 @@
 import {cartesianGenerator, fixDates, hasOverlap, stringToColour} from "./utils.js";
+import program from './program.json'
 
-let program = []
-let events = []
-let eventsByName = []
-let travelTimes = {}
-let margin = 5*60000
+const events = program.map((film, index) => ({
+  id: index,
+  film: film.name,
+  title: `${film.name} (${film.venueSpecific})`,
+  start: new Date(`${film.date}T${film.start}`),
+  end: new Date(`${film.date}T${film.end}`),
+  color: stringToColour(film.venue),
+  venue: film.venue
+}))
 
-function programToEvents(program) {
-  return program.map((film, index) => ({
-    id: index,
-    film: film.name,
-    title: `${film.name} (${film.venueSpecific})`,
-    start: new Date(`${film.date}T${film.start}`),
-    end: new Date(`${film.date}T${film.end}`),
-    color: stringToColour(film.venue),
-    venue: film.venue
-  }))
+const eventsByName = events.reduce((acc, event) => {
+  acc[event.film] = [...(acc[event.film] ?? []), event]
+  return acc
+}, {})
+
+const margin = 5*60000
+const travelTimeVikaVega= 26*60000
+const travelTimeCinVega= 19*60000
+const travelTimeVikaCin= 16*60000
+
+const travelTimes = {
+  "Cinemateket": {
+    "Vika-Kino": travelTimeVikaCin,
+    "VegaScene": travelTimeCinVega,
+    "Cinemateket": 0,
+  },
+  "Vika-Kino": {
+    "Vika-Kino": 0,
+    "VegaScene": travelTimeCinVega,
+    "Cinemateket": travelTimeVikaCin,
+  },
+  "Vega-Scene": {
+    "Vika-Kino": travelTimeVikaVega,
+    "VegaScene": 0,
+    "Cinemateket": travelTimeCinVega,
+  }
 }
 
 function calculateCombinations(selectedFilms) {
@@ -39,28 +60,10 @@ function calculatePlans(selectedFilms, lockedEvents, excludeEvents) {
   }
   return res
 }
-
-function init(configuration) {
-  console.log('WORKER init!', configuration)
-  if(configuration.program) {
-    program = configuration.program
-    events = programToEvents(program)
-    eventsByName = events.reduce((acc, event) => {
-      acc[event.film] = [...(acc[event.film] ?? []), event]
-      return acc
-    }, {})
-  }
-  margin = configuration.margin ?? margin
-  travelTimes = configuration.travelTimes ?? travelTimes
-}
-
-
 onmessage = async function(message) {
   const {data: {type}, data} = message
   console.log('WORKER message recieved', data, 'type', type)
-  if(type === 'init') {
-    init(data.configuration)
-  } else if(type === 'calculate') {
+  if(type === 'calculate') {
     const {reqId, selectedFilms, excludeEvents, lockedEvents} = data
     const combinations = calculateCombinations(selectedFilms)
     const plans = calculatePlans(selectedFilms, lockedEvents, excludeEvents)
