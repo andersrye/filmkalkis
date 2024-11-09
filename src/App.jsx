@@ -2,7 +2,7 @@ import './App.css'
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
-import {useEffect, useReducer, useRef, useState} from "react"
+import {useEffect, useReducer, useState} from "react"
 import program from './program.json'
 import {fixDates, generateId, useLocalStorageState} from "./utils.js";
 
@@ -22,28 +22,22 @@ if(localStorage.getItem('year') !== currentYear.toString()) {
 async function* calculate(selectedFilms, excludeEvents, lockedEvents) {
   const reqId = generateId()
   console.log('STARTING', reqId)
-  let defer
+  let promise, resolve
   const callback = ({data})=> {
-    if(data.reqId === reqId) defer.resolve(data)
+    if(data.reqId === reqId) resolve(data)
   }
   worker.addEventListener('message', callback)
-  worker.postMessage({
-    type:'calculate',
-    reqId,
-    selectedFilms,
-    excludeEvents,
-    lockedEvents
-  })
+  worker.postMessage({type:'calculate', reqId, selectedFilms, excludeEvents, lockedEvents})
 
   while(true) {
-    defer = Promise.withResolvers()
-    const res = await defer.promise
-    if(res.type === 'end' || res.type === 'abort') {
+    ({promise, resolve} = Promise.withResolvers())
+    const res = await promise
+    if(res.type === 'end') {
       break
     } else if(res.type === 'combinations') {
       yield res.combinations
-    } else if(res.type === 'plan') {
-      yield res.plan
+    } else if(res.type === 'plans') {
+      yield res.plans
     }
   }
   worker.removeEventListener('message', callback)
@@ -53,7 +47,7 @@ function planReducer(acc, cmd) {
   if(cmd.type === 'reset') {
     return cmd.value || []
   } else if (cmd.type === 'add') {
-    return [...acc, cmd.value]
+    return [...acc, ...cmd.value]
   }
 }
 
@@ -82,8 +76,8 @@ function App() {
         setCombinations((await results.next()).value)
         setLoading(true)
         planDispatch({type:'reset'})
-        for await (const plan of results) {
-          planDispatch({type: 'add', value: plan})
+        for await (const plans of results) {
+          planDispatch({type: 'add', value: plans})
         }
       }
       calc()
@@ -142,8 +136,6 @@ function App() {
             height={"44rem"}
             nowIndicator={true}
             eventClick={({event}) => {
-
-              console.log('event click!', event.toJSON())
               if (event.title === 'Opptatt') {
                 setExcludeEvents(excludeEvents.filter(e => e.start.getTime() !== event.start.getTime()))
               } else {

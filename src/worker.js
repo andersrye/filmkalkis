@@ -1,4 +1,4 @@
-import {cartesianGenerator, fixDates, hasOverlap, stringToColour} from "./utils.js";
+import { fixDates, hasOverlap, stringToColour} from "./utils.js";
 import program from './program.json'
 
 const events = program.map((film, index) => ({
@@ -46,52 +46,62 @@ function calculateCombinations(selectedFilms) {
   }, 1)
 }
 
-function* calculatePlans(selectedFilms, lockedEvents, excludeEvents) {
-  console.log(`WORKER calculating!`)
-  if (selectedFilms.length === 0) return []
-  if (selectedFilms.length === 1) return eventsByName[selectedFilms[0]].map(f=>[f])
-  const selectedEvents = selectedFilms.map(t => lockedEvents[t]?.map(fixDates) ?? eventsByName[t])
-  const product = cartesianGenerator(...selectedEvents)
-  for (const plan of product) {
-    if(!hasOverlap([...plan, ...excludeEvents], travelTimes, margin)) {
-      yield plan
+let iterations = 0
+function* iteratePlans(currentPlan, selectedEvents, excludeEvents, travelTimes, margin) {
+  if(currentPlan.length === 0) iterations = 0
+  iterations++
+  const nextFilmShowings = selectedEvents[0]
+  if(!nextFilmShowings) {
+    yield currentPlan
+    return
+  }
+  for (const showing of nextFilmShowings) {
+    const next = [...currentPlan, showing]
+    if(!hasOverlap([...next, ...excludeEvents], travelTimes, margin)) {
+      yield* iteratePlans(next, selectedEvents.slice(1), excludeEvents, travelTimes, margin)
     }
   }
 }
+
+function calculatePlans(selectedFilms, lockedEvents, excludeEvents) {
+  if (selectedFilms.length === 0) return []
+  if (selectedFilms.length === 1) return eventsByName[selectedFilms[0]].map(f=>[f])
+  const selectedEvents = selectedFilms.map(t => lockedEvents[t]?.map(fixDates) ?? eventsByName[t])
+  return iteratePlans([], selectedEvents, excludeEvents, travelTimes, margin)
+}
+
 const sleep = (ms = 0) => new Promise(r => setTimeout(r, ms))
 
 let working = false
 let abort = false
 onmessage = async function(message) {
   const {data: {type}, data} = message
-  console.log('WORKER message recieved', data, 'type', type)
   if(type === 'calculate') {
     const {reqId, selectedFilms, excludeEvents, lockedEvents} = data
-    if(working) {
+    while(working) {
       abort = true
-      console.log(`WORKER waiting ${reqId}`)
-      while(working) await sleep(1)
+      console.log(`WORKER ${reqId} waiting`)
+      await sleep()
     }
-    console.log(`WORKER starting ${reqId}`)
+    console.log(`WORKER ${reqId} starting`)
     working = true
     const combinations = calculateCombinations(selectedFilms)
     postMessage({type: 'combinations', reqId, combinations})
     let count = 0
+    let plans = []
     for (const plan of calculatePlans(selectedFilms, lockedEvents, excludeEvents)) {
-      if(count++ % 100 === 0) {
+      plans.push(plan)
+      if(count++ % 13 === 0) {
         await sleep()
         if(abort) break
+        postMessage({type: 'plans', reqId, plans})
+        plans = []
       }
-      postMessage({type: 'plan', reqId, plan})
     }
-    if(abort) {
-      console.log(`WORKER aborted ${reqId}`)
-      abort = false
-      postMessage({type: 'abort', reqId})
-    } else {
-      console.log(`WORKER finished ${reqId}`)
-      postMessage({type: 'end', reqId})
-    }
+    postMessage({type: 'plans', reqId, plans})
+    postMessage({type: 'end', reqId})
+    console.log(`WORKER ${reqId} finished. aborted=${abort}, count=${count}, combinations=${combinations}, iterations=${iterations}`)
+    abort = false
     working = false
   } else {
     console.error("WORKER unhandled message", message)

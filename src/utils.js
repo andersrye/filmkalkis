@@ -12,37 +12,6 @@ export function stringToColour(string) {
   return colour
 }
 
-export function cartesian(...args) {
-  const r = [], max = args.length-1;
-  function helper(arr, i) {
-    for (let j=0, l=args[i].length; j<l; j++) {
-      const a = arr.slice(0); // clone arr
-      a.push(args[i][j]);
-      if (i===max)
-        r.push(a);
-      else
-        helper(a, i+1);
-    }
-  }
-  helper([], 0);
-  return r;
-}
-
-export function* cartesianGenerator(...args) {
-  const  max = args.length-1;
-  function* helper(arr, i) {
-    for (let j=0, l=args[i].length; j<l; j++) {
-      const a = arr.slice(0); // clone arr
-      a.push(args[i][j]);
-      if (i===max)
-        yield a
-      else
-        yield* helper(a, i+1);
-    }
-  }
-  yield* helper([], 0);
-}
-
 //TODO: overlapper hvis events starter og slutter samtidig
 export function overlaps(a, b, marginMs = 0) {
   return (a.start <= b.start && b.start <= a.end)
@@ -59,8 +28,8 @@ export function hasOverlap(events, travelTimes = {}, margin = 0) {
       const b = events[j]
       const minMargin = (a.title === 'Opptatt' || b.title === 'Opptatt') ? 0 : margin
       const totalMargin = minMargin + (travelTimes[a.venue]?.[b.venue] ?? 0)
-      const o = overlaps(a, b, totalMargin)
-      if (o) return true
+      const hasOverlap = overlaps(a, b, totalMargin)
+      if (hasOverlap) return true
     }
   }
   return false
