@@ -1,3 +1,5 @@
+import {useEffect, useState} from "react";
+
 export function stringToColour(string) {
   const hash = string
   .split('')
@@ -69,4 +71,21 @@ export function fixDates(e){
   return {
     ...e, start: new Date(e.start), end: new Date(e.end)
   }
+}
+
+let id = 0
+export function generateId() {
+  return id++
+}
+
+export function useLocalStorageState(key, initialValue, transformFn) {
+  let initialState = JSON.parse(localStorage.getItem(key)) ?? initialValue
+  if (transformFn) initialState = transformFn(initialState)
+  const [state, setState] = useState(initialState)
+
+  useEffect(() => {
+    localStorage.setItem(key, JSON.stringify(state))
+  }, [key, state])
+
+  return [state, setState]
 }

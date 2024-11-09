@@ -2,28 +2,37 @@
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
-import {useEffect, useState} from "react"
+import {useEffect, useReducer, useState} from "react"
 import program from './program.json'
-import {fixDates} from "./utils.js";
+import {fixDates, generateId, useLocalStorageState} from "./utils.js";
 
 const worker = new Worker(new URL('./worker.js', import.meta.url), {type: 'module'})
 worker.onerror = e => console.error('worker error!', e)
 
-function configureWorker(configuration) {
+function init(program, travelTimes, margin) {
   worker.postMessage({
-    type: 'configure',
-    configuration
+    type: 'init',
+    configuration: { program, travelTimes, margin }
   })
 }
 
-function getResults() {
-  let resolvePromise
-  const promise = new Promise((resolve => resolvePromise = resolve))
-  const callback = (message)=> { resolvePromise(message.data)}
+function calculate(selectedFilms, excludeEvents, lockedEvents) {
+  const reqId = generateId()
+  let {promise, resolve} = Promise.withResolvers()
+  const callback = (message)=> {
+    console.log('message!', message)
+    if(message.data.reqId === reqId) {
+      resolve(message.data)
+    }
+  }
   worker.addEventListener('message', callback)
-  promise.then(()=> worker.removeEventListener('message', callback))
+  promise.finally(()=> worker.removeEventListener('message', callback))
   worker.postMessage({
-    type:'getResults'
+    type:'calculate',
+    reqId,
+    selectedFilms,
+    excludeEvents,
+    lockedEvents
   })
   return promise
 }
@@ -61,22 +70,14 @@ const travelTimes = {
 
 const filmTitles = Array.from(program.reduce((acc, val) => (acc.add(val.name), acc), new Set())).sort()
 
-configureWorker({
-  program,
-  travelTimes,
-  margin
-})
+init(program, travelTimes, margin)
 
-function useLocalStorageState(key, initialValue, transformFn) {
-  let initialState = JSON.parse(localStorage.getItem(key))?? initialValue
-  if(transformFn) initialState = transformFn(initialState)
-  const [state, setState] = useState(initialState)
-
-  useEffect(() => {
-    localStorage.setItem(key, JSON.stringify(state))
-  }, [key, state])
-
-  return [state, setState]
+function planReducer(acc, cmd) {
+  if(cmd.type === 'reset') {
+    return cmd.value || []
+  } else if (cmd.type === 'add') {
+    return [...acc, cmd.value]
+  }
 }
 
 function App() {
@@ -84,7 +85,7 @@ function App() {
   const [selectedPlan, setSelectedPlan] = useLocalStorageState('selectedPlan', 0)
   const [excludeEvents, setExcludeEvents] = useLocalStorageState('excludeEvents',[], v=>v.map(fixDates))
   const [lockedEvents, setLockedEvents] = useLocalStorageState('lockedEvents',{})
-  const [plans, setPlans] = useState([])
+  const [plans, planDispatch] = useReducer(planReducer, [])
   const [combinations, setCombinations] = useState(0)
   const [loading, setLoading] = useState(true)
 
@@ -99,16 +100,14 @@ function App() {
   useEffect(() => {
     if(selectedFilms != null && excludeEvents != null && lockedEvents != null) {
       setSelectedPlan(0)
-      const timeout = setTimeout(()=>setLoading(true), 150)
-      configureWorker({
+      setLoading(true)
+      calculate(
         selectedFilms, excludeEvents, lockedEvents
-      })
-      getResults().then(results => {
-        console.log('RESULTS', results)
-        setPlans(results.plans)
-        setCombinations(results.combinations)
-      }).finally(()=>{
-        clearTimeout(timeout)
+      ).then(res => {
+        console.log('RES', res)
+        setCombinations(res.combinations)
+        planDispatch({type: 'reset', value: res.plans})
+      }).finally(() => {
         setLoading(false)
       })
     }

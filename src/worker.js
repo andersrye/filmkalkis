@@ -1,18 +1,10 @@
-import {cartesian, cartesianGenerator, fixDates, hasOverlap, stringToColour} from "./utils.js";
+import {cartesianGenerator, fixDates, hasOverlap, stringToColour} from "./utils.js";
 
 let program = []
 let events = []
 let eventsByName = []
 let travelTimes = {}
-let excludeEvents = []
-let lockedEvents = []
-let selectedFilms = []
 let margin = 5*60000
-
-let result = {
-  combinations: null,
-  plans: []
-}
 
 function programToEvents(program) {
   return program.map((film, index) => ({
@@ -26,18 +18,15 @@ function programToEvents(program) {
   }))
 }
 
-function calculateCombinations() {
+function calculateCombinations(selectedFilms) {
   if (selectedFilms.length === 0) return 0
   return selectedFilms.reduce((acc, val) => {
     return acc*eventsByName[val].length
   }, 1)
 }
 
-function calculatePlans() {
+function calculatePlans(selectedFilms, lockedEvents, excludeEvents) {
   console.log(`WORKER calculating!`)
-  //console.log('selectedFilms', selectedFilms)
-  //console.log('lockedEvents', lockedEvents)
-  //console.log('excludeEvents', excludeEvents)
   if (selectedFilms.length === 0) return []
   if (selectedFilms.length === 1) return eventsByName[selectedFilms[0]].map(f=>[f])
   const selectedEvents = selectedFilms.map(t => lockedEvents[t]?.map(fixDates) ?? eventsByName[t])
@@ -48,16 +37,11 @@ function calculatePlans() {
       res.push(plan)
     }
   }
-  return res//product.filter(plan => !hasOverlap([...plan, ...excludeEvents], travelTimes, margin))
+  return res
 }
 
-//function getResult(i) {
-//  console.log('WORKER getting!', i)
-//  postMessage(result[i])
-//}
-
-function setConfiguration(configuration) {
-  console.log('WORKER configuring!', configuration)
+function init(configuration) {
+  console.log('WORKER init!', configuration)
   if(configuration.program) {
     program = configuration.program
     events = programToEvents(program)
@@ -68,26 +52,19 @@ function setConfiguration(configuration) {
   }
   margin = configuration.margin ?? margin
   travelTimes = configuration.travelTimes ?? travelTimes
-  lockedEvents = configuration.lockedEvents ?? lockedEvents
-  selectedFilms = configuration.selectedFilms ?? selectedFilms
-  excludeEvents = configuration.excludeEvents ?? excludeEvents
 }
 
-function getResults() {
-  postMessage(result)
-}
 
-onmessage = function(message) {
+onmessage = async function(message) {
   const {data: {type}, data} = message
   console.log('WORKER message recieved', data, 'type', type)
-  if(type === 'getResults') {
-    getResults()
-  } else if(type === 'configure') {
-    setConfiguration(data.configuration)
-    result = {
-      combinations: calculateCombinations(),
-      plans: calculatePlans()
-    }
+  if(type === 'init') {
+    init(data.configuration)
+  } else if(type === 'calculate') {
+    const {reqId, selectedFilms, excludeEvents, lockedEvents} = data
+    const combinations = calculateCombinations(selectedFilms)
+    const plans = calculatePlans(selectedFilms, lockedEvents, excludeEvents)
+    postMessage({type: 'result', reqId, combinations, plans})
   } else {
     console.error("WORKER unhandled message", message)
   }
