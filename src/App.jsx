@@ -1,3 +1,4 @@
+import './App.css'
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
@@ -18,17 +19,14 @@ if(localStorage.getItem('year') !== currentYear.toString()) {
   localStorage.setItem('year', currentYear.toString())
 }
 
-function calculate(selectedFilms, excludeEvents, lockedEvents) {
+async function* calculate(selectedFilms, excludeEvents, lockedEvents) {
   const reqId = generateId()
-  let {promise, resolve} = Promise.withResolvers()
-  const callback = (message)=> {
-    console.log('message!', message)
-    if(message.data.reqId === reqId) {
-      resolve(message.data)
-    }
+  console.log('STARTING', reqId)
+  let defer
+  const callback = ({data})=> {
+    if(data.reqId === reqId) defer.resolve(data)
   }
   worker.addEventListener('message', callback)
-  promise.finally(()=> worker.removeEventListener('message', callback))
   worker.postMessage({
     type:'calculate',
     reqId,
@@ -36,7 +34,19 @@ function calculate(selectedFilms, excludeEvents, lockedEvents) {
     excludeEvents,
     lockedEvents
   })
-  return promise
+
+  while(true) {
+    defer = Promise.withResolvers()
+    const res = await defer.promise
+    if(res.type === 'end' || res.type === 'abort') {
+      break
+    } else if(res.type === 'combinations') {
+      yield res.combinations
+    } else if(res.type === 'plan') {
+      yield res.plan
+    }
+  }
+  worker.removeEventListener('message', callback)
 }
 
 function planReducer(acc, cmd) {
@@ -54,7 +64,9 @@ function App() {
   const [lockedEvents, setLockedEvents] = useLocalStorageState('lockedEvents',{})
   const [plans, planDispatch] = useReducer(planReducer, [])
   const [combinations, setCombinations] = useState(0)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => console.log('PLANS', plans), [plans])
 
   function addFilm(film) {
     setSelectedFilms([...selectedFilms, film])
@@ -67,16 +79,17 @@ function App() {
   useEffect(() => {
     if(selectedFilms != null && excludeEvents != null && lockedEvents != null) {
       setSelectedPlan(0)
-      setLoading(true)
-      calculate(
-        selectedFilms, excludeEvents, lockedEvents
-      ).then(res => {
-        console.log('RES', res)
-        setCombinations(res.combinations)
-        planDispatch({type: 'reset', value: res.plans})
-      }).finally(() => {
-        setLoading(false)
-      })
+      const calc = async () => {
+        const results = calculate(selectedFilms, excludeEvents, lockedEvents)
+        setCombinations((await results.next()).value)
+        setLoading(true)
+        planDispatch({type:'reset'})
+        for await (const plan of results) {
+          planDispatch({type: 'add', value: plan})
+        }
+      }
+      calc()
+        .finally(() => setLoading(false))
     }
   }, [selectedFilms, excludeEvents, lockedEvents])
 
@@ -97,21 +110,7 @@ function App() {
             </label>))}
 
         </div>
-        <div style={{height: "100vh", overflow: "auto", flex: "1", textAlign: "left", position:"relative"}}>
-          {loading && <div style={{
-            background: "#fffb",
-            height: "100%",
-            width: "100%",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            zIndex: "1000",
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}>
-            Et øyeblikk...
-          </div>}
+        <div style={{height: "100vh", overflow: "auto", flex: "1", textAlign: "left", position: "relative"}}>
           <button
             disabled={selectedPlan === 0}
             onClick={() => {
@@ -128,6 +127,7 @@ function App() {
           >neste plan
           </button>
           <span style={{margin: "0 0.5rem"}}> Totale kombinasjoner {combinations}</span>
+          {loading && <span className={'loader-container'}><span className={'loader'}></span></span>}
           <br/><br/>
           <FullCalendar
             plugins={[timeGridPlugin, interactionPlugin]}

@@ -46,28 +46,30 @@ function calculateCombinations(selectedFilms) {
   }, 1)
 }
 
-function calculatePlans(selectedFilms, lockedEvents, excludeEvents) {
+function* calculatePlans(selectedFilms, lockedEvents, excludeEvents) {
   console.log(`WORKER calculating!`)
   if (selectedFilms.length === 0) return []
   if (selectedFilms.length === 1) return eventsByName[selectedFilms[0]].map(f=>[f])
   const selectedEvents = selectedFilms.map(t => lockedEvents[t]?.map(fixDates) ?? eventsByName[t])
   const product = cartesianGenerator(...selectedEvents)
-  const res = []
   for (const plan of product) {
     if(!hasOverlap([...plan, ...excludeEvents], travelTimes, margin)) {
-      res.push(plan)
+      yield plan
     }
   }
-  return res
 }
+
 onmessage = async function(message) {
   const {data: {type}, data} = message
   console.log('WORKER message recieved', data, 'type', type)
   if(type === 'calculate') {
     const {reqId, selectedFilms, excludeEvents, lockedEvents} = data
     const combinations = calculateCombinations(selectedFilms)
-    const plans = calculatePlans(selectedFilms, lockedEvents, excludeEvents)
-    postMessage({type: 'result', reqId, combinations, plans})
+    postMessage({type: 'combinations', reqId, combinations})
+    for (const plan of calculatePlans(selectedFilms, lockedEvents, excludeEvents)) {
+      postMessage({type: 'plan', reqId, plan})
+    }
+    postMessage({type: 'end', reqId})
   } else {
     console.error("WORKER unhandled message", message)
   }
