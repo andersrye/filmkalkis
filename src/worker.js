@@ -91,7 +91,7 @@ onmessage = async function(message) {
     let plans = []
     for (const plan of calculatePlans(selectedFilms, lockedEvents, excludeEvents)) {
       plans.push(plan)
-      if(count++ % 13 === 0) {
+      if(count++ % 63 === 0) {
         await sleep()
         if(abort) break
         postMessage({type: 'plans', reqId, plans})

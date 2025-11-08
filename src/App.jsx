@@ -21,7 +21,8 @@ if(localStorage.getItem('year') !== currentYear.toString()) {
 
 async function* calculate(selectedFilms, excludeEvents, lockedEvents) {
   const reqId = generateId()
-  console.log('STARTING', reqId)
+  const start = performance.now()
+  console.log(`STARTING ${reqId}`)
   let promise, resolve
   const callback = ({data})=> {
     if(data.reqId === reqId) resolve(data)
@@ -41,6 +42,8 @@ async function* calculate(selectedFilms, excludeEvents, lockedEvents) {
     }
   }
   worker.removeEventListener('message', callback)
+  const time = performance.now()-start
+  console.log(`FINISHED ${reqId} in ${time/1000}s`)
 }
 
 function planReducer(acc, cmd) {
@@ -163,8 +166,8 @@ function App() {
             views={{
               ffs: {
                 type: 'timeGrid',
-                duration: {days: 9},
-                buttonText: '9 day',
+                duration: {days: 11},
+                buttonText: '11 day',
                 selectable: true
               }
             }}
